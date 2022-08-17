@@ -8,7 +8,7 @@
             "type": "pwa-msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "e:\\WebDeveloping\\index.html"
+            "file": "e:\\MonetBlog\\index.html"
         }
     ]
 }
