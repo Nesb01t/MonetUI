@@ -1,39 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
     <head>
         <meta charset="utf-8">
-        <title>MonetBlog :D</title>
-        <base href="baidu.com" target="_blank"> 
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
-        <link rel="shortcut icon" href="logo.jpg">
+        <base href="index.html" target="_blank"> 
+        <link rel="stylesheet" href="css/main.css" class="stylesheet">
         <meta name="auther" content="Littlelumos">
+        
+        <link rel="shortcut icon" href="logo.jpg">
+        <title>MonetBlog :D</title>
     </head>
-
+        
     <body>
-        <!-- html中的标题 -->
-        <h1>Html中的标题</h1>
-        
-        <!-- 一条分割线, 下面是Html的一些标签 -->
-        <hr>
-        <!-- git测试 -->
-        <hr>
+        <div class="side-bar">
+            <div class="header">
+                <a href="index.html" class="logo">MonetBlog</a>
+                <div class="intro">你好陌生人！</div>
+            </div>
+            <div class="nav">
+                <a href="#" class="item">关于我</a>
+                <a href="#" class="item">联系我</a>
+                <a href="#" class="item">捐助我</a>
+            </div>
+            <div class="tag-list">
+                <a href="#" class="item"># hello</a>
+                <a href="#" class="item"># hi</a>
+                <a href="#" class="item"># yellow</a>
+            </div>
+        </div>
 
-        
-        <a id="special" href="https://www.baidu.com">这是一个链接</a>
-        <a href="https://www.baidu.com" target="_blank">这是一个新窗口打开的链接</a>
-        <br>
-        
-        <img src="logo.jpg" width="888"/>
-
-        <!-- 文本编辑系列 -->
-        <hr>
-        <p class="classA">这是html中的段落<br>通过 标签p 来定义!</p>
-        <p class="classA"><b>这是粗体 bold</b></p>
-        <p class="classA"><i>这是斜体 italic</i></p>
-
-        <!-- id 属性 -->
-        <a id="tips">有用的提示</a>
-        <a href="#tips">链接到有用的提示</a>
-        
+        <div class="main">
+            <div class="article-list">
+                <div class="item">
+                    <div class="title">你好陌生人！</div>
+                    <div class="status">发布于: 2060-10-01 | 阅读: 3500 | 标签: #html</div>
+                    <div class="content">
+                        我的天呐
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
