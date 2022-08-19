@@ -1,7 +1,53 @@
 body {
-    margin: 0;
+    background-color: #454545;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, body {
+    color: #eee;
 }
 
 .side-bar {
-    background-color: black;
+    float: left;
+    width: 13%;
+}
+
+.side-bar > * {
+    padding: 5px 10px;
+}
+
+.side-bar .nav a,
+.side-bar .tag-list a{
+    display: block;
+    padding: 6px 0px;
+    color: #999;
+    transition: color 500ms;
+}
+
+.side-bar .nav a:hover,
+.side-bar .tag-list a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    float: right;
+    width: 87%;
+}
+
+.side-bar .nav a{
+    font-weight: 700;
+}
+
+.header .logo{
+    line-height: 1;
+    border: 6px solid #fff;
+    padding: 10px 15px;
+    font-size: 30px;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 12px;
 }
