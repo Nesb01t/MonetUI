@@ -13,7 +13,7 @@ a, body {
 
 .side-bar {
     float: left;
-    width: 13%;
+    width: 17%;
 }
 
 .side-bar > * {
@@ -35,7 +35,8 @@ a, body {
 
 .main {
     float: right;
-    width: 87%;
+    width: 83%;
+    color: #454545;
 }
 
 .side-bar .nav a{
@@ -50,4 +51,30 @@ a, body {
     font-weight: 300;
     display: inline-block;
     margin-bottom: 12px;
+}
+
+.article-list {
+    background: #fff;
+    margin-right: 17%;
+    padding: 15px 30px;
+    box-shadow: 0 0 8px 4px rgba(0,0,0,0.2);
+}
+
+.article-list .item {
+    margin-bottom: 25px;
+}
+
+.article-list .item > * {
+    margin: 10px 0;
+}
+
+.article-list .item .title {
+    color: #454545;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.article-list .item .status {
+    font-size: 15px;
+    color: rgb(168, 168, 168);
 }
