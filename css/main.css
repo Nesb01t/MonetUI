@@ -8,7 +8,30 @@ body {
     background-image: linear-gradient(to bottom right, #FFF5E9, #C8A8DA);
 }
 
+a {
+    text-decoration: none;
+}
+
 .index {
-    width: 15%;
-    /* background-image: linear-gradient(to bottom right, #8CEBC7, #F98278); */
+
+    /* line */
+    border: 3px solid #725a7a;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-image: linear-gradient(to right, #C8A8DA, #725a7a, #C8A8DA) 10;
+}
+.index .tag-list{
+    margin: 20px;
+}
+
+.index .tag-list .tag-item{
+    /* box */
+    margin: 10px;
+
+    /* font */
+    font-size: 30px;
+    font-weight: 700;
+    color: #725a7a;
+    text-shadow: 2px 2px #c6cbd1;
 }
