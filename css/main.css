@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    display: flex;
     justify-content: center;
 }
 
@@ -13,7 +12,6 @@ a {
 }
 
 .index {
-
     /* line */
     border: 3px solid #725a7a;
     border-left: 0;
@@ -23,6 +21,7 @@ a {
 }
 .index .tag-list{
     margin: 20px;
+    text-align: center;
 }
 
 .index .tag-list .tag-item{
