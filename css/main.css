@@ -43,8 +43,8 @@ a {
     margin: 30px;
     text-align: center;
 
-    border: 8px solid;
-    border-image: linear-gradient(to bottom right, #d6d6d6, #c6cbd1, #d8d8d8) 10;
+    border: 5px solid;
+    border-image: linear-gradient(to bottom right, #3b3b3b, #777d83, #4e4e4e) 10;
     border-radius: 20px;
     clip-path: inset(0 round 10px);
 }
