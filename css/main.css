@@ -6,6 +6,7 @@ html {
 body {
     background-image: url(../bkg.jpg);
     background-color: #cccccc;
+    background-size: cover;
     /* background-image: linear-gradient(to bottom right, #FFF5E9, #b474d9); */
 }
 
@@ -15,11 +16,11 @@ a {
 
 .index {
     /* line */
-    border: 3px solid #725a7a;
+    border: 3px solid #7a7a7a;
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    border-image: linear-gradient(to right, #C8A8DA, #725a7a, #C8A8DA) 10;
+    border-image: linear-gradient(to right, #747474, #464646, #6d6d6d) 10;
 }
 
 .index .tag-list{
@@ -34,7 +35,7 @@ a {
     /* font */
     font-size: 30px;
     font-weight: 700;
-    color: #725a7a;
+    color: #373737;
     text-shadow: 2px 2px #c6cbd1;
 }
 
@@ -43,7 +44,7 @@ a {
     text-align: center;
 
     border: 8px solid;
-    border-image: linear-gradient(to bottom right, #C8A8DA, #c6cbd1, #C8A8DA) 10;
+    border-image: linear-gradient(to bottom right, #d6d6d6, #c6cbd1, #d8d8d8) 10;
     border-radius: 20px;
     clip-path: inset(0 round 10px);
 }
