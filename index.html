@@ -3,17 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/5.0.0/normalize.min.css" class="stylesheet">
     <link rel="stylesheet" href="css/main.css" class="stylesheet">
     <title>MonetBlog :)</title>
-</head>
-<body>                
+
     <script>
         function func(){
-            x=document.getElementsByClassName("tag-item");
-            x.innerHTML("qwq");
+            alert("qwq");
         }
     </script>
+</head>
+<body>                
     <div class="index">
         <div class="tag-list">
             <a href="index.html" class="tag-item">主页</a>
@@ -23,10 +24,9 @@
 
     <div class="main">
         <div class="content">
-            <div class="txt">
+            <div class="txt" id="txt">
                 这是主页,
                 您只需点击上方的tag即可进入浏览!
-
                 <button onclick="func()">点击这里</button>
             </div>
         </div>
