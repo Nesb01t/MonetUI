@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/main.css" class="stylesheet">
     <title>MonetBlog :)</title>
 </head>
-<body>
+<body>                
+    <script>
+        function func(){
+            x=document.getElementsByClassName("tag-item");
+            x.innerHTML("qwq");
+        }
+    </script>
     <div class="index">
         <div class="tag-list">
             <a href="index.html" class="tag-item">主页</a>
@@ -17,8 +23,12 @@
 
     <div class="main">
         <div class="content">
-            这是主页,
-            您只需点击上方的tag即可进入浏览!
+            <div class="txt">
+                这是主页,
+                您只需点击上方的tag即可进入浏览!
+
+                <button onclick="func()">点击这里</button>
+            </div>
         </div>
     </div>
 </body>
