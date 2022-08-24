@@ -20,8 +20,11 @@
     <div class="main">
         <div class="content">
             <div class="txt" id="txt">
-                这是主页, 您只需点击上方的tag即可进入浏览!<br>
-                <button onclick="test()">点击这里</button>
+                <form name="myForm" onsubmit="return test()">
+                    Name >> <input type="text" name="inputName">
+                    <input type="submit" value="提交">
+                </form><br>
+                <!-- <button onclick="test()">点击这里</button> -->
             </div>
         </div>
     </div>
