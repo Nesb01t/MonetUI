@@ -7,3 +7,13 @@ function myOut(i){ // 调试输出
         console.log("log out!");
     }
 }
+
+var personOut = {
+    firstname:"John",
+    age:50,
+
+    out:function(){
+        alert("yes");
+        return this.firstname;
+    }
+}
