@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-image: url(../bkg.jpg);
+    background-image: url(../res/bkg.jpg);
     background-color: #cccccc;
     background-size: cover;
     /* background-image: linear-gradient(to bottom right, #FFF5E9, #b474d9); */
