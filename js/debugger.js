@@ -17,8 +17,18 @@
 // }
 
 // -> 转换成Boolean时发生的事情(可以类推)
-if("abc"){
-    alert("有内容");
-} else {
-    alert("NOTHING HERE");
-}
+// if("abc"){
+//     alert("有内容");
+// } else {
+//     alert("NOTHING HERE");
+// }
+
+// -> 不同进制的数字/浏览器内存最大值
+// var x = 10+0x1c;
+// var x = Number.MAX_VALUE;
+// alert(x);
+
+// -> 妙用NaN
+alert(null==undefined);
+alert(NaN==NaN);
+alert("NaN和NaN并不相等");
