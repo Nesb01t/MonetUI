@@ -5,6 +5,5 @@ function out(i){
     return;
 }
 
-// -> Int数值转换
-var x = parseInt("123");
-out(x);
+// -> 字符字面量
+out("qwq\"\\qwq");
