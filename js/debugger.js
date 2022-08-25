@@ -1,2 +1,3 @@
 "use strict"; //使用严格模式
-alert(1)
+var message = "hi";
+alert(message);
