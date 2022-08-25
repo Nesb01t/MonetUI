@@ -2,5 +2,5 @@
 // var message = "hi";
 // alert(message);
 
-var undef = true;
-alert(typeof undef);
+// var undef;
+// alert(typeof undef+"\n当坚持做到变量声明时都初始化， 则typeof undef=未声明");
