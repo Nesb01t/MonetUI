@@ -5,6 +5,5 @@ function out(i){
     return;
 }
 
-// -> toString
-var x = (null==undefined);
-out(x);
+// -> new对象
+var x = new Object();
