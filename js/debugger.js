@@ -5,5 +5,6 @@ function out(i){
     return;
 }
 
-// -> 字符字面量
-out("qwq\"\\qwq");
+// -> toString
+var x = (null==undefined);
+out(x);
