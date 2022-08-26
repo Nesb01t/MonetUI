@@ -5,5 +5,6 @@ function out(i){
     return;
 }
 
-// -> new对象
-var x = new Object();
+// -> 一元操作符
+var x = 1;
+out(++x);
