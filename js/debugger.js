@@ -5,6 +5,7 @@ function out(i){
     return;
 }
 
-// -> 一元操作符
-var x = 1;
-out(++x);
+// -> 单加号操作
+var x = "0.01";
+var y = +x;
+out(y);
