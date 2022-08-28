@@ -5,7 +5,7 @@ function out(i){
     return;
 }
 
-// -> 解释从左向右执行
-var num1 = 10;
-var num2 = 5;
-out("qwq"+num1+num2);
+// -> 特殊的相等和不等
+out([null == undefined,
+    NaN != NaN,
+    "5" == 5])
