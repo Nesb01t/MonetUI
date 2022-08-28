@@ -6,10 +6,9 @@ function out(i){
     return;
 }
 
-// -> js参数数组
-function arg_out(i){
-    for (const x in arguments) {
-        out(arguments[x]);
-    }
-}
-arg_out(1, "qwq", 3)
+// -> 基本数据类型
+undefined;
+null;
+Boolean;
+Number;
+String;
