@@ -5,7 +5,6 @@ function out(i){
     return;
 }
 
-// -> ===的情况下
-out([null === undefined,
-    NaN !== NaN,
-    "5" === 5])
+// -> 逗号
+var a = (10, 3, 6);
+out(a);
