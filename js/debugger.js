@@ -6,12 +6,12 @@ function out(i){
     return;
 }
 
-// -> label破坏外层循环
-label: for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
-        out(i+""+j);
-        if (j==1){
-            break label;
-        }
+// -> 利用with重写out
+function new_out(i){
+    with(document){
+        getElementById("txt").innerHTML=
+        getElementById("txt").innerHTML+", "+i;
     }
+    
+    return;
 }
