@@ -5,6 +5,7 @@ function out(i){
     return;
 }
 
-// -> 乘性
-var x = 66;
-out(x/5);
+// -> 解释从左向右执行
+var num1 = 10;
+var num2 = 5;
+out("qwq"+num1+num2);
