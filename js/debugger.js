@@ -5,7 +5,6 @@ function out(i){
     return;
 }
 
-// -> 单加号操作
-var x = "0.01";
-var y = +x;
-out(y);
+// -> 按位或(or)
+var x = true;
+out(x|3);
