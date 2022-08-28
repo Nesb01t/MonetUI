@@ -5,6 +5,7 @@ function out(i){
     return;
 }
 
-// -> 无符号的右移操作符
-var x = -8;
-out(x>>>1);
+// -> 与undef
+var x;
+var a = true;
+out(a && x);
