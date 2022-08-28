@@ -6,8 +6,12 @@ function out(i){
     return;
 }
 
-// -> for-in
-var a = [10, 3, 6];
-for (var x in a){
-    out([x, a[x]]);
+// -> label破坏外层循环
+label: for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        out(i+""+j);
+        if (j==1){
+            break label;
+        }
+    }
 }
