@@ -5,7 +5,7 @@ function out(i){
     return;
 }
 
-// -> 特殊的相等和不等
-out([null == undefined,
-    NaN != NaN,
-    "5" == 5])
+// -> ===的情况下
+out([null === undefined,
+    NaN !== NaN,
+    "5" === 5])
