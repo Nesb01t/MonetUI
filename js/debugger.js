@@ -5,7 +5,6 @@ function out(i){
     return;
 }
 
-// -> 与undef
-var x;
-var a = true;
-out(a && x);
+// -> 乘性
+var x = 66;
+out(x/5);
