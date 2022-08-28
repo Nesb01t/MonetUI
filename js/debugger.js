@@ -5,6 +5,6 @@ function out(i){
     return;
 }
 
-// -> 左移操作符
+// -> 右移操作符
 var x = 4;
-out(x<<1);
+out(x>>1);
