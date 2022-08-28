@@ -5,6 +5,6 @@ function out(i){
     return;
 }
 
-// -> 按位或(or)
-var x = true;
-out(x|3);
+// -> 左移操作符
+var x = 4;
+out(x<<1);
