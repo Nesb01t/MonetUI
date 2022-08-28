@@ -6,12 +6,12 @@ function out(i){
     return;
 }
 
-// -> 利用with重写out
-function new_out(i){
-    with(document){
-        getElementById("txt").innerHTML=
-        getElementById("txt").innerHTML+", "+i;
-    }
-    
-    return;
+// -> switch
+switch (1) {
+    case 2:
+        out(2);
+        break;
+    default:
+        out(1);
+        break;
 }
