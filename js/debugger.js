@@ -6,9 +6,7 @@ function out(i){
     return;
 }
 
-// -> 基本数据类型
-undefined;
-null;
-Boolean;
-Number;
-String;
+// -> 引用类型-对象
+var person = new Object();
+person.name = "Nicholas";
+out(person.name);
