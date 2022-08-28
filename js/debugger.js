@@ -6,13 +6,6 @@ function out(i){
     return;
 }
 
-// -> 函数参数和外部引用了同一对象的情况
+// -> instanceof
 var person = new Object();
-person.health = 100;
-function add_health(i){
-    if (toString(i)=="[object Undefined]"){
-        i.health += 100;
-    }
-}
-add_health(person);
-out(person.health);
+out(person instanceof Object);
