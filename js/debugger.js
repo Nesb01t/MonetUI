@@ -6,13 +6,8 @@ function out(i){
     return;
 }
 
-// -> 作用域链 scope chain
-var color = "red";
-out(color);
-function color_change(){
-    with(window){
-        color = "blue";
-    }
+// -> 无块级作用域
+for (var i = 0; i < 10; i++) {
+    // do nothing
 }
-color_change();
-out(color);
+out(i);
