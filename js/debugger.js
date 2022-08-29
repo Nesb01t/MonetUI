@@ -6,6 +6,11 @@ function out(i){
     return;
 }
 
-// -> instanceof
-var person = new Object();
-out(person instanceof Object);
+// -> 作用域链 scope chain
+var color = "red";
+out(color);
+function color_change(){
+    color = "blue";
+}
+color_change();
+out(color);
