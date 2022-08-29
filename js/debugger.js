@@ -6,8 +6,9 @@ function out(i){
     return;
 }
 
-// -> 对象传参
-out({
-    name: "nicholas",
-    age: 9
-})
+// -> Array长度构造
+var color = new Array();
+out(color);
+
+var color_a = new Array(20);
+out(color_a);
