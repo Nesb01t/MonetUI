@@ -7,8 +7,5 @@ function out(i){
 }
 
 // -> Array长度构造
-var color = new Array();
+var color = new Array("nicholas");
 out(color);
-
-var color_a = new Array(20);
-out(color_a);
