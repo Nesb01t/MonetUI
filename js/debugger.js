@@ -6,11 +6,8 @@ function out(i){
     return;
 }
 
-// -> 对象字面量
-var person = {
-    name : "Nicholas",
-    age : 29
-};
-
-out(person);
-out(person.name);
+// -> 对象传参
+out({
+    name: "nicholas",
+    age: 9
+})
