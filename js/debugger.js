@@ -6,9 +6,11 @@ function out(i){
     return;
 }
 
-// -> 自下而上地查找变量
-var color = "RED";
-function getColor(){
-    return color;
-}
-out(getColor());
+// -> 对象字面量
+var person = {
+    name : "Nicholas",
+    age : 29
+};
+
+out(person);
+out(person.name);
