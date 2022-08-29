@@ -6,11 +6,9 @@ function out(i){
     return;
 }
 
-// -> 函数中临时变量访问
-function add(i){
-    num = i+1;
-    return num;
+// -> 自下而上地查找变量
+var color = "RED";
+function getColor(){
+    return color;
 }
-add(3);
-add(3);
-out(num);
+out(getColor());
