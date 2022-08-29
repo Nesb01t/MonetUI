@@ -6,8 +6,11 @@ function out(i){
     return;
 }
 
-// -> 无块级作用域
-for (var i = 0; i < 10; i++) {
-    // do nothing
+// -> 函数中临时变量访问
+function add(i){
+    num = i+1;
+    return num;
 }
-out(i);
+add(3);
+add(3);
+out(num);
