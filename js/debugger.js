@@ -10,7 +10,9 @@ function out(i){
 var color = "red";
 out(color);
 function color_change(){
-    color = "blue";
+    with(window){
+        color = "blue";
+    }
 }
 color_change();
 out(color);
