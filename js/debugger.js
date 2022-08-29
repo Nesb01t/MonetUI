@@ -7,5 +7,5 @@ function out(i){
 }
 
 // -> Array长度构造
-var color = new Array("nicholas");
+var color = ['nicholas', 'qwq'];
 out(color);
