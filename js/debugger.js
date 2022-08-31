@@ -7,6 +7,5 @@ function out(i){
 }
 
 // -> lastIndexOf
-var a = [1, 2, 3, 4, 5, 3];
-out(a.indexOf(3));
-out(a.lastIndexOf(3));
+var a = new Date();
+out(a);
