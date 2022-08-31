@@ -8,4 +8,4 @@ function out(i){
 
 // -> Array长度构造
 var color = ['nicholas', 'qwq'];
-out(color);
+out(color.toString());
