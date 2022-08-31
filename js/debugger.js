@@ -8,6 +8,5 @@ function out(i){
 
 // -> reverse
 var a = [1, 2, 3, 4, 5];
-var b = [1, 2, 3, 6];
-var c = a.concat(b);
-out(c);
+var b = a.slice(1, 4);
+out(b);
