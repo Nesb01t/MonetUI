@@ -6,6 +6,8 @@ function out(i){
     return;
 }
 
-// -> Array长度构造
-var color = ['nicholas', 'qwq'];
-out(color.join(undefined));
+// -> List构造
+var list = new Array();
+list.push(1);
+var a = list.pop();
+out(a);
