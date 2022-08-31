@@ -6,9 +6,7 @@ function out(i){
     return;
 }
 
-// -> List构造
-var list = new Array();
-list.push(1);
-list.push(2);
-list.unshift(3,4);
-out(list);
+// -> reverse
+var a = [1, 2, 3, 4, 5];
+a.reverse();
+out(a);
