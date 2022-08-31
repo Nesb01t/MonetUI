@@ -9,5 +9,5 @@ function out(i){
 // -> List构造
 var list = new Array();
 list.push(1);
-var a = list.pop();
+var a = list.shift();
 out(a);
