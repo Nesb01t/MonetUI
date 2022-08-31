@@ -6,7 +6,7 @@ function out(i){
     return;
 }
 
-// -> reverse
-var a = [1, 2, 3, 4, 5];
-var b = a.slice(1, 4);
-out(b);
+// -> lastIndexOf
+var a = [1, 2, 3, 4, 5, 3];
+out(a.indexOf(3));
+out(a.lastIndexOf(3));
