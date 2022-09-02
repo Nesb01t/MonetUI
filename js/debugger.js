@@ -6,12 +6,6 @@ function out(i){
     return;
 }
 
-// -> arg对象的callee
-function factorial(num){
-    if (num==1) {
-        return 1;
-    } else {
-        return num*arguments.callee(num-1);
-    }
-}
-out(factorial(5));
+// -> this
+out(this);
+// 调用this获得了全局变量对象窗口
