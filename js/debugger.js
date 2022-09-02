@@ -6,6 +6,9 @@ function out(i){
     return;
 }
 
-// -> this
-out(this);
-// 调用this获得了全局变量对象窗口
+// -> 通过call扩充作用域(this)
+color = 1;
+function getColor(){
+    return this.color;
+}
+out(getColor());
