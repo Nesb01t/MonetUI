@@ -6,6 +6,7 @@ function out(i){
     return;
 }
 
-// -> lastIndexOf
-var a = new Date();
+// -> Date原理
+var a = Date.parse("2021/2/21")
+a = new Date(1234);
 out(a);
