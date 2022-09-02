@@ -6,12 +6,12 @@ function out(i){
     return;
 }
 
-// -> 递归函数中耦合情况
+// -> arg对象的callee
 function factorial(num){
     if (num==1) {
         return 1;
     } else {
-        return num*factorial(num-1);
+        return num*arguments.callee(num-1);
     }
 }
 out(factorial(5));
