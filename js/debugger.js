@@ -6,5 +6,8 @@ function out(i){
     return;
 }
 
-// -> getDay获取星期
-out(new Date().getDay())
+// -> 取函数对象名字
+var sum = function(a, b){
+    return a+b;
+}
+out(sum(1, 23));
