@@ -6,9 +6,12 @@ function out(i){
     return;
 }
 
-// -> 通过call扩充作用域(this)
+// -> 通过call扩充作用域(this)v1
 color = 1;
 function getColor(){
     return this.color;
 }
-out(getColor());
+var o = {
+    color: "a"
+}
+out(getColor.call(o));
