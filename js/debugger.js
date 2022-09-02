@@ -6,8 +6,8 @@ function out(i){
     return;
 }
 
-// -> 取函数对象名字
-var sum = function(a, b){
-    return a+b;
+// -> 函数声明和表达式初始化(1)
+out(a(1));
+function a(x){
+    return x+1;
 }
-out(sum(1, 23));
