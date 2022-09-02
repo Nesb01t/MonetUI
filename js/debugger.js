@@ -6,12 +6,6 @@ function out(i){
     return;
 }
 
-// -> 通过call扩充作用域(this)v1
-color = 1;
-function getColor(){
-    return this.color;
-}
-var o = {
-    color: "a"
-}
-out(getColor.call(o));
+// -> new对象初始化变量
+var a = new String("some text");
+out(a);
