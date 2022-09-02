@@ -6,8 +6,8 @@ function out(i){
     return;
 }
 
-// -> 函数声明和表达式初始化(1)
+// -> 函数声明和表达式初始化(2)
 out(a(1));
-function a(x){
+var a = function(x){
     return x+1;
 }
