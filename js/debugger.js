@@ -6,6 +6,6 @@ function out(i){
     return;
 }
 
-// -> new对象初始化变量
-var a = new String("some text");
-out(a);
+// -> Number.toPrecision
+var a = 1231232132131231233223;
+out(a.toPrecision())
