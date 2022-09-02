@@ -6,7 +6,7 @@ function out(i){
     return;
 }
 
-// -> Date.parse
-var a = Date.parse("2021/2/21");
+// -> Date.UTC
+var a = Date.UTC(2021, 1, 10);
 var b = new Date(a);
 out(b);
