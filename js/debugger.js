@@ -6,7 +6,7 @@ function out(i){
     return;
 }
 
-// -> Date原理
-var a = Date.parse("2021/2/21")
-a = new Date(1234);
-out(a);
+// -> Date.parse
+var a = Date.parse("2021/2/21");
+var b = new Date(a);
+out(b);
