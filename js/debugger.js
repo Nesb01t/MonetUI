@@ -6,7 +6,7 @@ function out(i){
     return;
 }
 
-// -> String.trim
+// -> String.split
 var a = "  12312 qweq q11 3     ";
-a.trim();
-out(a);
+var b = a.split(" ");
+out(b);
