@@ -6,7 +6,7 @@ function out(i){
     return;
 }
 
-// -> String.concat
-var a = "123";
-var b = a.concat(123);
-out(b);
+// -> String.trim
+var a = "  12312 qweq q11 3     ";
+a.trim();
+out(a);
