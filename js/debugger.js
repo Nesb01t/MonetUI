@@ -6,6 +6,7 @@ function out(i){
     return;
 }
 
-// -> Number.toPrecision
-var a = 1231232132131231233223;
-out(a.toPrecision())
+// -> String.concat
+var a = "123";
+var b = a.concat(123);
+out(b);
