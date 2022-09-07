@@ -11,4 +11,4 @@ function Person(name, age){
 }
 
 // -> frame对象
-out(top)
+window.open("index.html")
