@@ -10,6 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> top.move
-var x = top.moveTo(100, 100);
-alert(x);
+// -> innerHeight
+out("高度"+window.innerWidth)
