@@ -6,7 +6,6 @@ function out(i){
     return;
 }
 
-// -> String.replace
-var a = "abcde"
-var b = a.replace("a", "bbb");
-out(b);
+// -> Global对象->isNaN
+var a = 10;
+out(isNaN(a));
