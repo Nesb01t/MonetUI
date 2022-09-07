@@ -6,7 +6,7 @@ function out(i){
     return;
 }
 
-// -> String.split
-var a = "  12312 qweq q11 3     ";
-var b = a.split(" ");
+// -> String.replace
+var a = "abcde"
+var b = a.replace("a", "bbb");
 out(b);

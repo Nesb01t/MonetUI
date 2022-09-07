@@ -4,8 +4,7 @@
 // git提交规范 https://www.jianshu.com/p/752edeae4855
 // js类(class) https://www.runoob.com/js/js-class-intro.html
 function test(){
-    x = document.all;
-    console.log(x);
+    alert(123);
 }
 
 var test_json = {"site":[
