@@ -6,9 +6,15 @@ function out(i){
     return;
 }
 
-// -> delete property
-var person = {
-    "name": "nicholas"
-};
-delete person.name;
-out(person.name);
+// -> 工厂模式
+function createPerson(name, age){
+    var p = new Object;
+    p.name = name;
+    p.age = age;
+    p.sayName = function(){
+        out(this.name);
+    }
+    return p;
+}
+var p = createPerson("卡比同学", 10);
+p.sayName();
