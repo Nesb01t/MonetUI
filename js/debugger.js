@@ -6,9 +6,7 @@ function out(i){
     return;
 }
 
-// -> window.hello()
-function hello(){
-    out('123');
-}
-
-window.hello()
+// -> apply给函数传参
+var values = [1, 2, 3, 4, 5, 10];
+var max = Math.max.apply(Math, values);
+out(max);
