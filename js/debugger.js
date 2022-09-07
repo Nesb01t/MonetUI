@@ -10,5 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> openURL
-window.open("https://www.baidu.com")
+// -> setTimeout
+setTimeout(out(1), 100)
