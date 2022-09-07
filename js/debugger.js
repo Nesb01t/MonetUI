@@ -10,13 +10,10 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> 不同实例调用同一成员函数
-function say(){
-    out("yes");
-}
-function cast(){
-    this.say = say;
-}
-var c1 = new cast();
-var c2 = new cast();
-out(c1.say == c2.say);
+// -> 原型模式
+Person.prototype.sayName = function(){
+    out(this.name);
+};
+var p1 = new Person("nicholas", 10);
+var p2 = new Person("卡比同学", 100);
+out(p1.sayName == p2.sayName);
