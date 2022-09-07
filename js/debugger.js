@@ -10,10 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> 原型模式prototype
-Person.prototype.sayName = function(){
-    out(this.name);
-};
+// -> in关键字
 var p1 = new Person("卡比同学", 100);
-var x = p1.hasOwnProperty("name");
-out(x);
+out("name" in p1);
