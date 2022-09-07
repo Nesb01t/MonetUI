@@ -6,6 +6,5 @@ function out(i){
     return;
 }
 
-// -> Global对象->isNaN
-var a = 10;
-out(isNaN(a));
+// -> eval()
+eval(out(1));
