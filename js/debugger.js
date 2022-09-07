@@ -10,7 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> window对象
-window.age = 10;
-delete window.age;
-out(window.age);
+// -> frame对象
+out(top)
