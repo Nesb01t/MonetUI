@@ -10,5 +10,8 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> innerHeight
-out("高度"+window.innerWidth)
+// -> resizeTo
+out("高度"+window.innerHeight);
+var h = window.innerHeight;
+var ret = window.resizeTo(window.innerWidth*0.8, h*0.8);
+out(ret);
