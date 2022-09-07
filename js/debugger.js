@@ -6,13 +6,12 @@ function out(i){
     return;
 }
 
-// -> 构造函数模式
-function Person(name, age){
-    this.name = name;
-    this.age = age;
-    this.sayName = function(){
-        out(name);
-    };
+// -> 一般函数用作创建对象
+function add(x, y){
+    return x,y;
 }
-var a = new Person("卡比同学", 10);
-a.sayName();
+
+var x = new add(1, 2);
+var y = add(1, 2);
+out(x);
+out(y);
