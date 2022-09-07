@@ -14,7 +14,6 @@ function Person(name, age){
 Person.prototype.sayName = function(){
     out(this.name);
 };
-var p1 = new Person("nicholas", 10);
-var p2 = new Person("卡比同学", 100);
-p1.sayName();
-p2.sayName();
+var p1 = new Person("卡比同学", 100);
+var x = p1.hasOwnProperty("name");
+out(x);
