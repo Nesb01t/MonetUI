@@ -5,13 +5,10 @@ function out(i){
     document.getElementById("txt").innerHTML+", "+i;
     return;
 }
-
-// -> 一般函数用作创建对象
-function add(x, y){
-    return x,y;
+function Person(name, age){
+    this.name = name;
+    this.age = age;
 }
-
-var x = new add(1, 2);
-var y = add(1, 2);
-out(x);
-out(y);
+// -> instanceof
+var x = new Person("卡比同学", 10);
+out(x instanceof Person);
