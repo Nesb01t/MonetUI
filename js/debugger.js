@@ -10,5 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> setTimeout
-setTimeout(out(1), 100)
+// -> setInterval
+setInterval(out, 10, 20);
