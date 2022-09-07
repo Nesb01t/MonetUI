@@ -10,8 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> resizeTo
-out("高度"+window.innerHeight);
-var h = window.innerHeight;
-var ret = window.resizeTo(window.innerWidth*0.8, h*0.8);
-out(ret);
+// -> openURL
+window.open("https://www.baidu.com")
