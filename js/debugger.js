@@ -9,6 +9,14 @@ function Person(name, age){
     this.name = name;
     this.age = age;
 }
-// -> instanceof
-var x = new Person("卡比同学", 10);
-out(x instanceof Person);
+
+// -> 不同实例调用同一成员函数
+function say(){
+    out("yes");
+}
+function cast(){
+    this.say = say;
+}
+var c1 = new cast();
+var c2 = new cast();
+out(c1.say == c2.say);
