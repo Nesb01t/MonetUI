@@ -10,15 +10,12 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> 简单原型语法
-function Man(){
-}
-Man.prototype = {
-    name: "卡比同学",
-    age: 20,
-    sayName: function(){
-        out(this.name);
+// -> 块级语句
+function output(){
+    for(var i=0; i < 10; i++){
+        out(i);
     }
+    var i;
+    out(i);
 }
-var m = new Man();
-m.sayName()
+output()
