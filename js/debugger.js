@@ -10,5 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> frame对象
-window.open("index.html")
+// -> top.move
+var x = top.moveTo(100, 100);
+alert(x);
