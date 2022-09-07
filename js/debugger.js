@@ -11,5 +11,6 @@ function Person(name, age){
 }
 
 // -> window对象
-age = 10;
+window.age = 10;
+delete window.age;
 out(window.age);
