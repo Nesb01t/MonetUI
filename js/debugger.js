@@ -10,6 +10,11 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> in关键字
-var p1 = new Person("卡比同学", 100);
-out("name" in p1);
+// -> forin对象
+var p1 = new Person("卡比同学", 10);
+for (const key in p1) {
+    if (Object.hasOwnProperty.call(p1, key)) {
+        const element = p1[key];
+        out(element);
+    }
+}
