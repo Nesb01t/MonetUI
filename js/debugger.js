@@ -6,15 +6,13 @@ function out(i){
     return;
 }
 
-// -> 工厂模式
-function createPerson(name, age){
-    var p = new Object;
-    p.name = name;
-    p.age = age;
-    p.sayName = function(){
-        out(this.name);
-    }
-    return p;
+// -> 构造函数模式
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+    this.sayName = function(){
+        out(name);
+    };
 }
-var p = createPerson("卡比同学", 10);
-p.sayName();
+var a = new Person("卡比同学", 10);
+a.sayName();
