@@ -6,5 +6,9 @@ function out(i){
     return;
 }
 
-// -> eval()
-eval(out(1));
+// -> window.hello()
+function hello(){
+    out('123');
+}
+
+window.hello()
