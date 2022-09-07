@@ -10,5 +10,7 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> setInterval
-setInterval(out, 10, 20);
+// -> clearTimeout和time_id
+var time_id = setTimeout(out, 10, 10);
+// clearTimeout(time_id);
+out(time_id)
