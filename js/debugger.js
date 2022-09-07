@@ -6,7 +6,9 @@ function out(i){
     return;
 }
 
-// -> 上下取舍
-out(Math.ceil(4.5));
-out(Math.floor(4.5));
-out(Math.round(4.5));
+// -> delete property
+var person = {
+    "name": "nicholas"
+};
+delete person.name;
+out(person.name);
