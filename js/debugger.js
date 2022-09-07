@@ -6,7 +6,7 @@ function out(i){
     return;
 }
 
-// -> apply给函数传参
-var values = [1, 2, 3, 4, 5, 10];
-var max = Math.max.apply(Math, values);
-out(max);
+// -> 上下取舍
+out(Math.ceil(4.5));
+out(Math.floor(4.5));
+out(Math.round(4.5));
