@@ -10,10 +10,11 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> 原型模式
+// -> 原型模式prototype
 Person.prototype.sayName = function(){
     out(this.name);
 };
 var p1 = new Person("nicholas", 10);
 var p2 = new Person("卡比同学", 100);
-out(p1.sayName == p2.sayName);
+p1.sayName();
+p2.sayName();
