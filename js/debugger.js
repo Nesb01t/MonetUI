@@ -10,7 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> clearTimeout和time_id
-var time_id = setTimeout(out, 10, 10);
-// clearTimeout(time_id);
-out(time_id)
+// -> prompt
+var x = prompt()
+out(x)
