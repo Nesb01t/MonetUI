@@ -10,6 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> prompt
-var x = prompt()
-out(x)//
+// -> document和window下的location
+var x = document.location
+out(x.host)
