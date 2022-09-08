@@ -12,4 +12,4 @@ function Person(name, age){
 
 // -> prompt
 var x = prompt()
-out(x)
+out(x)//
