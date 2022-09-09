@@ -10,6 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> childNodes
-var len = document.body.childNodes.length;
+// -> firstChild和lastChild
+var len = document.body.firstChild;
 out(len);
