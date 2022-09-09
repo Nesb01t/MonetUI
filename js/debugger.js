@@ -10,5 +10,8 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> reload
-setTimeout(location.reload(), 1000)
+// -> navigator
+var online = navigator.onLine
+out(online)
+var language = navigator.language
+out(language)
