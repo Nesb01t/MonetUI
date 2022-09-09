@@ -11,6 +11,8 @@ function Person(name, age){
     this.age = age;
 }
 
-// git -> spacial_attri
-t.setAttribute("spacial_attri", 10);
-out(t.getAttribute("spacial_attri"))
+// git -> createElement&appenChild
+var h = document.createElement("h1");
+h.id = "myNewh1";
+h.className = "box";
+document.body.appendChild(h)
