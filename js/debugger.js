@@ -10,6 +10,11 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> document.all[id]定位ID
-var x = document.all["txt"]
-out(x)
+// -> 函数能力检测
+function isSortable(Obj){
+    return typeof Obj.sort == "function";
+}
+var num = 19;
+var list = [1, 3, 7, 4, 2];
+out(isSortable(num))
+out(isSortable(list))
