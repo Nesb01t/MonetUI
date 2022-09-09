@@ -10,16 +10,12 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> firstChild和lastChild
+// -> 获取key值NodeValue
 var len = document.body.childNodes;
-for (const key in len) {
-    if (Object.hasOwnProperty.call(len, key)) {
-        const element = len[key].childNodes;
-        for (const x in element) {
-            if (Object.hasOwnProperty.call(element, x)) {
-                const f = element[x];
-                out(f.nodeValue);
-            }
-        }
+var p = len[3].childNodes;
+for (const x in p) {
+    if (Object.hasOwnProperty.call(p, x)) {
+        const element = p[x];
+        out(element.nodeValue);
     }
 }
