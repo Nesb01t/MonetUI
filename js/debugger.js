@@ -1,6 +1,7 @@
 // debugger header
 // "use strict"; //使用严格模式
-var t = document.getElementById("txt");
+var p = document.getElementById("txt"); // p标签
+var t = p.childNodes[0].nodeValue; // p中内容
 function out(i){
     document.getElementById("txt").innerHTML=
     document.getElementById("txt").innerHTML+", "+i;
@@ -11,7 +12,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// git -> 获取标签中的text
-var x = document.getElementById("txt");
-var t = x.childNodes[0];
-out(t.nodeValue);
+// git -> 标签内容长度length
+out(t.length);
