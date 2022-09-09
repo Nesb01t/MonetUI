@@ -11,7 +11,7 @@ function Person(name, age){
     this.age = age;
 }
 
-// git -> 获取标签中的#text
+// git -> 获取标签中的text
 var x = document.getElementById("txt");
 var t = x.childNodes[0];
 out(t.nodeValue);
