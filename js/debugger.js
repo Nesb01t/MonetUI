@@ -10,5 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> replace
-location.replace("#")
+// -> reload
+setTimeout(location.reload(), 1000)
