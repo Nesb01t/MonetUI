@@ -11,6 +11,7 @@ function Person(name, age){
     this.age = age;
 }
 
-// git -> 完整带标签的createElement
-var x = document.createElement("<h1>yes</h1>");
-document.body.appendChild(x);
+// git -> 获取标签中的#text
+var x = document.getElementById("txt");
+var t = x.childNodes[0];
+out(t.nodeValue);
