@@ -10,9 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> document的子对象->DocumentType和HtmlElement
-var value = document.nodeValue;
-out(value);
-
-var sub = document.childNodes;
-out(sub[1])
+// -> document.title
+var x = document.title
+out(x)
