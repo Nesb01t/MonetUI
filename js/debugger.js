@@ -10,6 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> document和window下的location
+// ->  assign
 var x = document.location
-out(x.host)
+location.assign("https://www.baidu.com")
