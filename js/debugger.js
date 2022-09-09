@@ -10,5 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> indexOf检测
-out(navigator.userAgent.indexOf("Firefox"))
+// -> NodeType接口
+var doc = document.head;
+out(doc.nodeType)
