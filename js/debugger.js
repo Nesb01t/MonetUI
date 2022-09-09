@@ -10,8 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> navigator
-var online = navigator.onLine
-out(online)
-var language = navigator.language
-out(language)
+// -> navigator.plugin->abondon
+var len = Plugin.length
+out(len)
