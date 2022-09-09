@@ -11,8 +11,5 @@ function Person(name, age){
 }
 
 // -> childNodes
-setTimeout(function(){
-    out("yes");
-    var doc = document.body.childNodes;
-    out(doc[1].nodeValue);
-}, 1000)
+var len = document.body.childNodes.length;
+out(len);
