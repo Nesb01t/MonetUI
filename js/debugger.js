@@ -10,11 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> document.all
-var aldoc = document.all
-for (const key in aldoc) {
-    if (Object.hasOwnProperty.call(aldoc, key)) {
-        const element = aldoc[key];
-        out(element)
-    }
-}
+// -> document.all[id]定位ID
+var x = document.all["txt"]
+out(x)
