@@ -10,5 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> userAgent->ifFirefox
-out(navigator.userAgent.split(' ')[8].split('/')[0])
+// -> indexOf检测
+out(navigator.userAgent.indexOf("Firefox"))
