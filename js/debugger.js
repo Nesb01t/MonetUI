@@ -10,6 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// ->  assign
-var x = document.location
-location.assign("https://www.baidu.com")
+// -> replace
+location.replace("#")
