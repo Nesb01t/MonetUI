@@ -10,6 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> NodeType接口
+// -> NodeName接口
 var doc = document.head;
-out(doc.nodeType)
+out(doc.nodeName)
