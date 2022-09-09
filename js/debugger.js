@@ -10,5 +10,11 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> screen对象
-window.resizeTo(screen.availWidth, screen.availHeight)
+// -> document.all
+var aldoc = document.all
+for (const key in aldoc) {
+    if (Object.hasOwnProperty.call(aldoc, key)) {
+        const element = aldoc[key];
+        out(element)
+    }
+}
