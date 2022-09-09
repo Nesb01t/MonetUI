@@ -12,5 +12,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// git -> 是否存在child.text
-out(t.nodeType)
+// git -> 修改nodeValue
+t.nodeValue = "yes"
