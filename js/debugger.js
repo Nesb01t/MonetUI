@@ -10,12 +10,9 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> 获取key值NodeValue
-var len = document.body.childNodes;
-var p = len[3].childNodes;
-for (const x in p) {
-    if (Object.hasOwnProperty.call(p, x)) {
-        const element = p[x];
-        out(element.nodeValue);
-    }
-}
+// -> document的子对象->DocumentType和HtmlElement
+var value = document.nodeValue;
+out(value);
+
+var sub = document.childNodes;
+out(sub[1])
