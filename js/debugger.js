@@ -10,6 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> navigator.plugin->abondon
-var len = Plugin.length
-out(len)
+// -> screen对象
+window.resizeTo(screen.availWidth, screen.availHeight)
