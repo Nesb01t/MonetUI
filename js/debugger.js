@@ -10,6 +10,9 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> NodeName接口
-var doc = document.head;
-out(doc.nodeName)
+// -> childNodes
+setTimeout(function(){
+    out("yes");
+    var doc = document.body.childNodes;
+    out(doc[1].nodeValue);
+}, 1000)
