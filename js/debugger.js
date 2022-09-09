@@ -11,8 +11,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// git -> createElement&appenChild
-var h = document.createElement("h1");
-h.id = "myNewh1";
-h.className = "box";
-document.body.appendChild(h)
+// git -> 完整带标签的createElement
+var x = document.createElement("<h1>yes</h1>");
+document.body.appendChild(x);
