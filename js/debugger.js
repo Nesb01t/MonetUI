@@ -10,5 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> close()
-document.close()
+// -> getElement
+var t = document.getElementById("txt");
+out(t);
