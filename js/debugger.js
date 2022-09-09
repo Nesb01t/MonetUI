@@ -10,6 +10,6 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> getElement
+// -> getAttribute
 var t = document.getElementById("txt");
-out(t);
+out(t.getAttribute("class"));
