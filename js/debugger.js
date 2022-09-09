@@ -10,6 +10,5 @@ function Person(name, age){
     this.age = age;
 }
 
-// -> TagName查找元素
-var x = document.getElementsByTagName("p")
-out(x.item(0))
+// -> close()
+document.close()
