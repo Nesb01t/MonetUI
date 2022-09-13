@@ -1,7 +1,5 @@
 // debugger header
 // "use strict"; //使用严格模式
-var p = document.getElementById("txt"); // p标签
-var t = p.childNodes[0]; // p中内容
 function out(i){
     document.getElementById("txt").innerHTML=
     document.getElementById("txt").innerHTML+", "+i;
@@ -12,5 +10,9 @@ function Person(name, age){
     this.age = age;
 }
 
-// git -> 修改nodeValue
-t.nodeValue = "yes"
+// -> document的子对象->DocumentType和HtmlElement
+var value = document.nodeValue;
+out(value);
+
+var sub = document.childNodes;
+out(sub[1])
