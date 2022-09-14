@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-image: url(../res/bkg1.jpg);
+    background-image: url(../res/bkg2.jpg);
     background-color: #cccccc;
     background-size: cover;
     /* background-image: linear-gradient(to bottom right, #FFF5E9, #b474d9); */
@@ -35,7 +35,7 @@ a {
     /* font */
     font-size: 30px;
     font-weight: 300;
-    color: #5f4667;
+    color: #FFFFFF;
 }
 
 .main {
@@ -54,8 +54,8 @@ a {
 }
 
 .main .content .txt {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 300;
     letter-spacing: 1px;
-    color: #5f4667;
+    color: #EEEEEE  ;
 }
