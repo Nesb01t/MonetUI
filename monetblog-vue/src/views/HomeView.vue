@@ -1,5 +1,6 @@
 <template>
-  <p :class="{'red':!isRed}">我是红色的</p>
+  <p v-if="!isRed">我是if True</p>
+  <p v-if="isRed">我是if False</p>
 </template>
 
 <script>
