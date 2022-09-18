@@ -4,7 +4,9 @@
   <input type="text" placeholder="请输入你的姓名" v-model="userName">
   <textarea placeholder="请输入你的建议" cols="30" rows="10" v-model="userInput"></textarea>
   <p>{{ userName }} -- {{ userInput }}</p>
-  <button>提交</button>
+
+  <!-- v-on:简写成@ -->
+  <button @click="submit">提交</button>
 </template>
 
 
@@ -23,9 +25,14 @@
         alert("hello!")
       }
 
+      const submit = () => {
+        alert(`${data.userName}的建议是${data.userInput}`);
+        // 这是JS ES6的字符串
+      }
       return {
         ...toRefs(data),
-        handleClick
+        handleClick,
+        submit
       }
     }
   }
