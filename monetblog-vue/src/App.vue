@@ -1,19 +1,16 @@
 <template>
-  <router-view>
-    <HelloWorld>123</HelloWorld>
-  </router-view>
+  <div id="app">yes
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-}
+  name: 'App'
 }
 </script>
 
 <style>
+
 </style>
