@@ -1,6 +1,6 @@
 <template>
-  <h1>vue3的生命周期</h1>
-  <div id="dom">{{ msg }}</div>
+  <h1>v-on事件</h1>
+  <button v-on:click="handleClick">click me</button>
 </template>
 
 
@@ -13,27 +13,13 @@
         msg: "message"
       })
       
-      onBeforeMount(()=>{ // 数据渲染之前
-        console.log("onBeforeMount", document.querySelector("#dom"))
-        setTimeout(()=>{
-          data.msg = "hello!!"
-        }, 2000)
-      })
-
-      onMounted(()=>{ // 数据渲染之后
-        console.log("onBeforeMount", document.querySelector("#dom"))
-      })
-
-      onBeforeUpdate(()=>{ // 页面更新之前
-        console.log("onBeforeUpdate")
-      })
-
-      onUpdated(()=>{ // 页面更新之后-> 页面更改=Update
-        console.log("onUpdate")
-      })
+      const handleClick = () => {
+        alert("hello!")
+      }
 
       return {
-        ...toRefs(data)
+        ...toRefs(data),
+        handleClick
       }
     }
   }
