@@ -3,7 +3,7 @@
   <!-- v-model 双向绑定 -->
   <input type="text" placeholder="请输入你的姓名" v-model="userName">
   <textarea placeholder="请输入你的建议" cols="30" rows="10" v-model="userInput"></textarea>
-  <p>{{ userName }}</p>
+  <p>{{ userName }} -- {{ userInput }}</p>
   <button>提交</button>
 </template>
 
