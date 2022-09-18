@@ -6,7 +6,7 @@
     focus: 获取焦点
     change: 内容更改
   -->
-  <input type="text" placeholder="请输入你的姓名" v-model="userName"
+  <input type="text" :placeholder="defaultInput" v-model="userName"
     @focus="handleFocus"
     @blur="handleBlur"><br>
   <input type="text" placeholder="请输入你的电话" v-model="userPhone"><br>
@@ -27,19 +27,21 @@
         msg: "message",
         userName: "",
         userInput: "",
-        userPhone: ""
+        userPhone: "",
+
+        defaultInput: "请输入你的名字"
       })
       
       const handleClick = () => {
-        alert("hello!")
+        defaultInput = ""
       }
 
       const handleFocus = () => {
-        alert("hello!")
+        defaultInput = ""
       }
 
       const handleBlur = () => {
-        alert("hello!")
+        // alert("hello!")
       }
 
       const submit = () => {
