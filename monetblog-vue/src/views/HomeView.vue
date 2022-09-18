@@ -1,7 +1,7 @@
 <template>
-  <!-- v-html -->
-  <p>{{ info }}</p>
-  <p v-html="info"></p>
+  <!-- v-hind 绑定动态属性 -->
+  <!-- v-bind:属性名="变量名" -->
+  <p v-bind:data="dataVal">我有属性data</p>
 </template>
 
 <script>
@@ -12,7 +12,8 @@
       const data = reactive({
         name: "小美",
         age: 20,
-        info: "<i>富文本斜体字</i>"
+        info: "<i>富文本斜体字</i>",
+        dataVal: 2
       })
       return { ...toRefs(data) }
     }
