@@ -6,10 +6,12 @@
     focus: 获取焦点
     change: 内容更改
   -->
-  <input type="text" placeholder="请输入你的姓名" v-model="userName"><br>
+  <input type="text" placeholder="请输入你的姓名" v-model="userName"
+    @focus="handleFocus"
+    @blur="handleBlur"><br>
   <input type="text" placeholder="请输入你的电话" v-model="userPhone"><br>
   <textarea placeholder="请输入你的建议" cols="30" rows="10" v-model="userInput"></textarea>
-  <p>{{ userName }} -- {{ userInput }}</p>
+  <p>{{ userName }} -- {{ userInput }}</p> 
 
   <!-- v-on:简写成@ -->
   <button @click="submit">提交</button>
@@ -32,6 +34,14 @@
         alert("hello!")
       }
 
+      const handleFocus = () => {
+        alert("hello!")
+      }
+
+      const handleBlur = () => {
+        alert("hello!")
+      }
+
       const submit = () => {
         alert(`${data.userName}的建议是${data.userInput}`);
         // 这是JS ES6的字符串
@@ -39,6 +49,8 @@
       return {
         ...toRefs(data),
         handleClick,
+        handleFocus,
+        handleBlur,
         submit
       }
     }
