@@ -1,7 +1,5 @@
 <template>
-  <!-- v-hind 绑定动态属性 -->
-  <!-- v-bind:属性名="变量名" -->
-  <p v-bind:data="dataVal">我有属性data</p>
+  <p :class="{'red':!isRed}">我是红色的</p>
 </template>
 
 <script>
@@ -13,9 +11,16 @@
         name: "小美",
         age: 20,
         info: "<i>富文本斜体字</i>",
-        dataVal: 2
+        isRed: true
       })
       return { ...toRefs(data) }
     }
   }
 </script>
+
+
+<style>
+  .red{
+    color: red;
+  }
+</style>
