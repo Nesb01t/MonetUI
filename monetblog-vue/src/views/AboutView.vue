@@ -1,7 +1,13 @@
 <template>
   <h1>input 事件</h1>
   <!-- v-model 双向绑定 -->
-  <input type="text" placeholder="请输入你的姓名" v-model="userName">
+  <!-- input: 输入事件
+    blur: 失去焦点
+    focus: 获取焦点
+    change: 内容更改
+  -->
+  <input type="text" placeholder="请输入你的姓名" v-model="userName"><br>
+  <input type="text" placeholder="请输入你的电话" v-model="userPhone"><br>
   <textarea placeholder="请输入你的建议" cols="30" rows="10" v-model="userInput"></textarea>
   <p>{{ userName }} -- {{ userInput }}</p>
 
@@ -18,7 +24,8 @@
       const data = reactive({
         msg: "message",
         userName: "",
-        userInput: ""
+        userInput: "",
+        userPhone: ""
       })
       
       const handleClick = () => {
