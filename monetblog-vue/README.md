@@ -1,4 +1,4 @@
-# monet-vue
+# monetblog-vue
 
 ## Project setup
 ```
