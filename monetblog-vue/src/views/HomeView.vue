@@ -1,6 +1,5 @@
 <template>
-  <p v-if="!isRed">我是if True</p>
-  <p v-if="isRed">我是if False</p>
+  <p :display="isRed">我是if True</p>
 </template>
 
 <script>
@@ -12,7 +11,7 @@
         name: "小美",
         age: 20,
         info: "<i>富文本斜体字</i>",
-        isRed: true
+        isRed: none
       })
       return { ...toRefs(data) }
     }
