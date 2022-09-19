@@ -5,18 +5,17 @@
     <router-link to="/ss-bis">射手BIS</router-link> |
     <router-link to="/zhs-bis">召唤师BIS</router-link>
   </nav>
+  <el-alert title="info alert" type="info" effect="dark" />
   <router-view></router-view>
 </template>
 
 <script>
 export default {
-
 }
 </script>
 
 <style>
 .tr-nav {
-  padding: 10px;
   font-size: 20px;
 }
 </style>
