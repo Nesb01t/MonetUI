@@ -1,11 +1,18 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/Terraria">Terraria</router-link> |
-      <router-link to="/WowMaps">WowMaps</router-link>
-    </nav>
-    <router-view/>
+    <el-container>
+      <!-- header -->
+      <el-header>
+        <nav>
+          <router-link to="/">Home</router-link> |
+          <router-link to="/Terraria">Terraria</router-link> |
+          <router-link to="/WowMaps">WowMaps</router-link>
+        </nav>
+      </el-header>
+
+      <!-- router-view -->
+      <el-main><router-view/></el-main>
+    </el-container> 
   </div>
 </template>
 
