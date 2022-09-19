@@ -4,9 +4,9 @@ import Home from '../views/Home.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: Home
+    path: '/', // 路由地址
+    name: 'home', // 路由名字
+    component: Home // 路由vue组件
   },
   {
     path: '/about',
