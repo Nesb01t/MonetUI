@@ -1,10 +1,12 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/Terraria">Terraria</router-link> |
-    <router-link to="/WowMaps">WowMaps</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/Terraria">Terraria</router-link> |
+      <router-link to="/WowMaps">WowMaps</router-link>
+    </nav>
+    <router-view/>
+  </div>
 </template>
 
 <style>
@@ -13,12 +15,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #121921;
 }
 
 nav {
-  padding: 30px;
-  font-size: 22px;
+  padding: 10px;
+  font-size: 30px;
 }
 
 nav a {

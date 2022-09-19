@@ -13,10 +13,26 @@ const routes = [
     component: () => import("../views/Terraria.vue"),
     children:[
       {
-        path: '/bis',
-        name: 'bis',
-        component: () => import("../views/Terraria/Bis.vue")
-      }
+        path: '/zs-bis',
+        name: 'zs-bis',
+        component: () => import("../views/Terraria/zs-bis.vue")
+      },
+      {
+        path: '/fs-bis',
+        name: 'fs-bis',
+        component: () => import("../views/Terraria/fs-bis.vue")
+      },
+      {
+        path: '/ss-bis',
+        name: 'ss-bis',
+        component: () => import("../views/Terraria/ss-bis.vue")
+      },
+      {
+        path: '/zhs-bis',
+        name: 'zhs-bis',
+        component: () => import("../views/Terraria/zhs-bis.vue")
+      },
+      
     ]
   },
   {

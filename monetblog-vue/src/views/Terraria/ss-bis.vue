@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <h1>Terraria/Bis</h1>
-  </div>
+  <h2>射手配装</h2>
 </template>
 
 <script>
 export default {
-    name: "bis"
+name: "ss-bis"
 }
 </script>
 

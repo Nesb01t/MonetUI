@@ -1,6 +1,9 @@
 <template>
-  <nav>
-    <router-link to="/bis">123</router-link>
+  <nav class="tr-nav">
+    <router-link to="/zs-bis">战士BIS</router-link> |
+    <router-link to="/fs-bis">法师BIS</router-link> |
+    <router-link to="/ss-bis">射手BIS</router-link> |
+    <router-link to="/zhs-bis">召唤师BIS</router-link>
   </nav>
   <router-view></router-view>
 </template>
@@ -12,5 +15,8 @@ export default {
 </script>
 
 <style>
-
+.tr-nav {
+  padding: 10px;
+  font-size: 20px;
+}
 </style>
