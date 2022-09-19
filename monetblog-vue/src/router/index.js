@@ -1,30 +1,12 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
-// WebHistory历史模式, WebHashHistory哈希历史模式
-import Home from '../views/Home.vue'
+import Layout from '../views/Layout/Layout.vue'
 
 const routes = [
   {
     path: '/', // 路由地址
-    name: 'home', // 路由名字
-    component: Home // 路由vue组件
+    name: 'layout', // 路由名字
+    component: Layout, // 路由vue组件
   },
-  {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/About.vue'),
-    children: [
-      {
-        path: '/maps',
-        name: 'maps',
-        component: () => import("../views/Maps.vue")
-      }
-    ]
-  },
-  {
-    path: '/maps',
-    name: 'maps',
-    component: () => import("../views/Maps.vue")
-  }
 ]
 
 const router = createRouter({
@@ -32,5 +14,4 @@ const router = createRouter({
   routes
 })
 
-// 暴露路由对象
 export default router
