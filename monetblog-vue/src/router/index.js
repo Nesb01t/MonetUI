@@ -1,12 +1,22 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
-import Layout from '../views/Layout/Layout.vue'
+import Home from '../views/Home.vue'
 
 const routes = [
   {
-    path: '/', // 路由地址
-    name: 'layout', // 路由名字
-    component: Layout, // 路由vue组件
+    path: '/',
+    name: 'home',
+    component: Home,
   },
+  {
+    path: '/terraria',
+    name: 'terraria',
+    component: () => import("../views/Terraria.vue"),
+  },
+  {
+    path: '/wowmaps',
+    name: 'wowmaps',
+    component: () => import("../views/WowMaps.vue"),
+  }
 ]
 
 const router = createRouter({
