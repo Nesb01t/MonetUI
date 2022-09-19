@@ -32,4 +32,5 @@ const router = createRouter({
   routes
 })
 
+// 暴露路由对象
 export default router
