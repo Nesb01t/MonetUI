@@ -11,6 +11,13 @@ const routes = [
     path: '/terraria',
     name: 'terraria',
     component: () => import("../views/Terraria.vue"),
+    children:[
+      {
+        path: '/bis',
+        name: 'bis',
+        component: () => import("../views/Terraria/Bis.vue")
+      }
+    ]
   },
   {
     path: '/wowmaps',
