@@ -5,6 +5,7 @@
     @select="handleSelect"
     router
   >
+    <el-button class="logo" type="primary" bg>MonetBlog</el-button>
     <el-menu-item index="/">Home</el-menu-item>
     <el-menu-item index="/terraria">Terraria</el-menu-item>
     <el-menu-item index="/wowmaps">WowMaps</el-menu-item>
@@ -23,4 +24,8 @@ const handleSelect = (key, keyPath) => {
 </script>
 
 <style>
+.logo {
+  display: flex;
+  margin: 1%;
+}
 </style>
