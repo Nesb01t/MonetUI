@@ -13,6 +13,6 @@ export default {
 
 <style>
 .home {
-    font-size: 30px;
+  font-size: 30px;
 }
 </style>
