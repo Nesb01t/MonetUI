@@ -22,4 +22,9 @@ export default {
   text-align: center;
   color: #121921;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
 </style>

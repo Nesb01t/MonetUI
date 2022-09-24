@@ -25,7 +25,9 @@ const handleSelect = (key, keyPath) => {
 
 <style>
 .logo {
-  display: flex;
-  margin: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 </style>
