@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <div class="logo">
-      <el-button type="primary" bg>MonetBlog</el-button>
+      <el-button type="primary">MonetBlog</el-button>
     </div>
     
     <div class="menu">
@@ -34,6 +34,7 @@
   
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .menu {
   width: 80%;

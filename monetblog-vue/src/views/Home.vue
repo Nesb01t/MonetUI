@@ -27,7 +27,5 @@ export default {
   height: 20%;
   background-color: darkcyan;
   margin-right: 5px;
-
-  flex: 1;
 }
 </style>
