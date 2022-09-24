@@ -1,21 +1,21 @@
 <template>
-  <div class="nav">
-    <div class="logo">
-      <el-button type="primary">MonetBlog</el-button>
-    </div>
-    
-    <div class="menu">
-      <el-menu
-        mode="horizontal"
-        @select="handleSelect"
-        router
-      >
+  <div class="header-nav">
+    <el-menu
+      mode="horizontal"
+      @select="handleSelect"
+      ellipsis="false"
+      id="menu"
+      router
+    >
+      <div class="logo">qwq</div>
+      <div class="items">
         <el-menu-item index="/">Home</el-menu-item>
         <el-menu-item index="/terraria">Terraria</el-menu-item>
         <el-menu-item index="/wowmaps">WowMaps</el-menu-item>
-        <el-menu-item disabled>More</el-menu-item>
-      </el-menu>
-    </div>
+        <el-menu-item index="/what" disabled>More</el-menu-item>
+      </div>
+      <div class="right-flow"></div>
+    </el-menu>
   </div>
 </template>
 
@@ -24,19 +24,32 @@
 </script>
 
 <style>
-.nav {
+
+.header-nav {
+  height: 50px;
+}
+
+#menu {
   display: flex;
-  flex-flow: 1;
+  justify-content: space-around;
 }
 
 .logo {
   width: 20%;
-  
+  background-color:aqua;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu {
-  width: 80%;
+.items {
+  width: 60%;
+
+  display: flex;
+  justify-content: center;
+}
+.right-flow {
+  width: 20%;
+  background-color:brown;
 }
 </style>
