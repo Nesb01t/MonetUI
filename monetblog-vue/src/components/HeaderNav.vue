@@ -1,13 +1,12 @@
 <template>
-  <div class="header-nav">
+  <div class="top-nav">
     <el-menu
       mode="horizontal"
-      @select="handleSelect"
-      ellipsis="false"
       id="menu"
+      :ellipsis="false"
       router
     >
-      <div class="logo">qwq</div>
+      <div class="logo">MonetBlog</div>
       <div class="items">
         <el-menu-item index="/">Home</el-menu-item>
         <el-menu-item index="/terraria">Terraria</el-menu-item>
@@ -24,12 +23,9 @@
 </script>
 
 <style>
-
-.header-nav {
-  height: 50px;
-}
-
 #menu {
+  width: 100%;
+
   display: flex;
   justify-content: space-around;
 }

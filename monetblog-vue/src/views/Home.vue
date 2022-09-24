@@ -1,8 +1,8 @@
 <template>
   <div id="home">
-    <span class="bl">1</span>
-    <span class="bl">2</span>
-    <span class="bl">3</span>
+    <span class="bl">我</span>
+    <span class="bl">的</span>
+    <span class="bl">发</span>
   </div>
 </template>
 
@@ -14,17 +14,18 @@ export default {
 
 <style>
 #home {
-  width: 80%;
-  height: 300px;
+  width: 100%;
+  height: 500px;
   background-color: palegreen;
 
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .bl {
   width: 10%;
-  height: 20%;
+  height: 30%;
   background-color: darkcyan;
   margin-right: 5px;
 }

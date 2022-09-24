@@ -23,7 +23,7 @@ export default {
   color: #121921;
 }
 
-body {
+body, html {
   margin: 0;
   padding: 0;
 }
