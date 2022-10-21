@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <title>Exp4</title>
+</html>
+
+<body>
+  <div class="header" style="display:flex; background-color:darkcyan; color:white; height:150px; flex-direction: column;">
+    <div class="logo" style="display:flex; width:100%; height:100%; align-items: center; margin-left: 20px; font-size: 40px;">浙江科技学院信息学院</div>
+  </div>
+
+  <div class="navi" style="display:flex; height:40px; justify-content:end; align-items:center; background-color: aquamarine;">
+    <span style="margin:auto 25px auto 25px">校园简介</span>
+    <span style="margin:auto 25px auto 25px">校园风光</span>
+    <span style="margin:auto 25px auto 25px">专业介绍</span>
+    <span style="margin:auto 25px auto 25px">人才培养</span>
+    <span style="margin:auto 25px auto 25px">师资队伍</span>
+    <span style="margin:auto 25px auto 25px">教学科研</span>
+  </div>
+  <div class="content" style="display:flex; align-items: center; height: 600px; background-color: lightblue">
+    <div class="menu" style="display: flex; flex-direction: column; align-items: center; width:30%; height:100%; background-color: lightgray;">
+    </div>
+    <div class="form" style="display:flex; flex-direction: column; width: 70%; height:100%; background-color: aliceblue;">
+      <div class="form-title" style="text-align:center; width: 100%; font-size: 30px; font-weight: bolder; margin-top: 20px;">用户注册</div>
+      <div><span class="item">用户名</span><input style="width: 200px"></div>
+      <div><span class="item">密码</span><input style="width: 200px"></div>
+      <div><span class="item">确认密码</span><input style="width: 200px"></div>
+      <div><span class="item">性别</span><input type="radio">男<input type="radio">女</div>
+      <div><span class="item">兴趣爱好</span><input type="checkbox">运动<input type="checkbox">看电影<input type="checkbox">旅游</div>
+      <div><span class="item">所在城市</span><select style="width: 150px">
+        <option>杭州</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>重庆</option>
+      </select>
+      </div>
+      <div><span class="item">留言</span><textarea type="text" style="margin-top: 8px"></textarea></div>
+      <div><span class="item"></span>
+        <button>确定</button>
+        <button>重置</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<style>
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: darkcyan;
+}
+
+.item {
+  display: inline-block;
+  width: 39%;
+  text-align: right;
+  margin-top: 12px;
+  margin-right: 8px;
+}
+</style>
