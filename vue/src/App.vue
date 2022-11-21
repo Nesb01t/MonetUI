@@ -1,9 +1,8 @@
-<script setup>
-</script>
-
 <template>
   <div>hello world</div>
+  <mButton>123</mButton>
 </template>
 
-<style scoped>
-</style>
+<script setup>
+import mButton from "@/basic/m-button.vue";
+</script>
