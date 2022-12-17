@@ -1,8 +1,8 @@
 <template>
   <div>hello world</div>
-  <mButton>123</mButton>
+  <mButton>hello</mButton>
 </template>
 
 <script setup>
-import mButton from "@/basic/m-button.vue";
+import mButton from "@/lib/button";
 </script>

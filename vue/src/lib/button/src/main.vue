@@ -6,7 +6,7 @@
       @click="onClick"
       :disabled="disabled"
     >
-      <div class="content">TEST<slot></slot></div>
+      <div class="content"><slot></slot></div>
     </button>
   </div>
 </template>
