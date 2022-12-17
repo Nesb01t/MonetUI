@@ -1,5 +1,6 @@
 const { VueLoaderPlugin } = require("vue-loader");
 const glob = require("glob");
+const path = require("path");
 const list = {};
 
 async function makeList(dirPath, list) {
@@ -15,21 +16,23 @@ async function makeList(dirPath, list) {
   console.log(list);
 }
 
-makeList("components/lib", list);
+makeList("src/lib", list);
 
 module.exports = {
   entry: list,
+  mode: "development",
   output: {
     filename: "[name].umd.js",
-    path: "dist",
-    library: "mui",
+    path: path.resolve(__dirname, "dist"),
+    library: "monetUI",
     libraryTarget: "umd",
   },
   plugins: [new VueLoaderPlugin()],
   module: {
     rules: [
       {
-        test,
+        test: /\.vue$/,
+        use: [{ loader: "vue-loader" }],
       },
     ],
   },
