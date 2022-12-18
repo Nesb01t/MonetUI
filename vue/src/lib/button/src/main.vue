@@ -11,6 +11,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "mButton",
+};
+</script>
+
 <script setup>
 import { ref, reactive } from "vue";
 const disabled = ref(false);

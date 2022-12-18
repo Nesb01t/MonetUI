@@ -1,11 +1,12 @@
 {
   "name": "monetui",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "discription": "简单的vue2/3组件库",
   "main": "dist/index.umd.js",
   "author": "nesb01t",
   "files": [
-    "dist"
+    "dist",
+    "src/lib"
   ],
   "scripts": {
     "dev": "vite",
@@ -16,7 +17,7 @@
   "dependencies": {
     "element-plus": "^2.2.27",
     "glob": "^8.0.3",
-    "monetui": "^1.0.4",
+    "monetui": "^1.0.7",
     "vue": "^3.2.38",
     "vue-loader": "^17.0.1",
     "webpack": "^5.75.0"
