@@ -1,24 +1,26 @@
 {
   "name": "monetui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "discription": "简单的vue2/3组件库",
-  "main": "dist/index.umd.js",
+  "main": "lib/monetui.umd.js",
   "author": "nesb01t",
   "files": [
-    "dist",
-    "src/lib"
+    "lib"
   ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
-    "build:js": "webpack --config ./webpack.run.js"
+    "build:js": "webpack --config ./webpack.run.js",
+    "build:components": "node --trace-warnings ./build/build.js",
+    "lib": "npm run build:components"
   },
   "dependencies": {
     "element-plus": "^2.2.27",
     "glob": "^8.0.3",
     "monetui": "^1.0.7",
     "vue": "^3.2.38",
+    "vue-cli": "^2.9.6",
     "vue-loader": "^17.0.1",
     "webpack": "^5.75.0"
   },
