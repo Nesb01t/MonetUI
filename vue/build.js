@@ -3,7 +3,7 @@ const { defineConfig, build } = require("vite");
 const vue = require("@vitejs/plugin-vue");
 
 const entryDir = path.resolve(__dirname, "../src/lib");
-const outDir = path.resolve(__dirname, "../lib");
+const outDir = path.resolve(__dirname, "../dist");
 
 // vite配置
 const baseConfig = defineConfig({
@@ -30,9 +30,9 @@ const buildAll = async () => {
       build: {
         rollupOptions,
         lib: {
-          entry: path.resolve(entryDir, "index.js"),
-          name: "monetui",
-          fileName: "monetui",
+          entry: path.resolve(entryDir, "index.js"), // 主入口js
+          name: "monetUI", // 名称
+          fileName: "monetui", // 文件名
           formats: ["es", "umd"],
         },
         outDir,
