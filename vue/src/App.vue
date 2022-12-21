@@ -1,4 +1,4 @@
 <template>
   <div>hello world</div>
-  <button>hello</button>
+  <mButton>h123ello</mButton>
 </template>

@@ -1,17 +1,11 @@
-import mButton from "./button";
+const components = import.meta.globEager("./**/*.vue");
+function install(app) {
+  for (let i in components) {
+    let component = components[i].default;
+    app.component(component.name, component);
+  }
+}
 
-const components = [
-  mButton
-]
-
-const install = function (Vue) {
-  if(install.installed) return;
-  components.map(component => Vue.component(component.name, component))
-};
-
-const API = {
+export default {
   install,
-  mButton
 };
-
-export default API;

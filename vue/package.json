@@ -1,6 +1,6 @@
 {
   "name": "monetui",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "discription": "简单的vue2/3组件库",
   "main": "dist/monetui.umd.js",
   "author": "nesb01t",
@@ -17,7 +17,7 @@
   "dependencies": {
     "element-plus": "^2.2.27",
     "glob": "^8.0.3",
-    "monetui": "^1.0.7",
+    "monetui": "^1.1.0",
     "vue": "^3.2.38",
     "vue-cli": "^2.9.6",
     "vue-loader": "^17.0.1",
